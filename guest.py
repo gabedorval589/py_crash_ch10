@@ -1,3 +1,8 @@
+"""
+1. Ask for names
+2. Collect names
+3. Write collection to a file, one name per line
+"""
 from pathlib import Path
 
 while True:
