@@ -1,6 +1,12 @@
 from pathlib import Path
 
-name = input("Name: ")
+while True:
+  print("\nPlease tell me your name:")
+  print("(enter 'q' at any time to quit)")
 
-path = Path('guest.txt')
-path.write_text(name)
+  name = input ("Name: ")
+  if name == 'q':
+    break
+  else:
+    path = Path('guest_book.txt')
+    path.write_text(name)
